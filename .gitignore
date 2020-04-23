@@ -1,0 +1,9 @@
+.git
+*/.idea
+*/venv/Include
+*/venv/Lib
+*/venv/Scripts
+*/__pycache__/*
+*/*.cfg
+*/migrations
+*/venv/app/__pycache__/*

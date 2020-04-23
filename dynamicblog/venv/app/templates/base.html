@@ -1,0 +1,18 @@
+<html>
+    <head>
+        {% if title %}
+        <title>{{ title }} - Dynamicblog</title>
+        {% else %}
+        <title>Welcome to Dynamicblog!</title>
+        {% endif %}
+    </head>
+    <body>
+        <div>
+            Dynamicblog:
+            <a href="{{ url_for('index') }}">Home</a>
+            <a href="{{ url_for('login') }}">Login</a>
+        </div>
+        <hr>
+        {% block content %}{% endblock %}
+    </body>
+</html>
